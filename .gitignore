@@ -1,0 +1,72 @@
+# --- General Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Virtual Environments ---
+.env
+.venv
+env/
+venv/
+ENV/
+VENV/
+*/site-packages/
+
+# --- IDE / Editor Specific ---
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# --- Jupyter Notebook Checkpoints ---
+.ipynb_checkpoints/
+
+# --- Build artifacts / Distribution ---
+build/
+dist/
+*.egg-info/
+*.egg
+MANIFEST
+
+# --- ML/DL Specific ---
+# Datasets (often too large, manage them separately or with DVC/S3/etc.)
+# Comment out if you intend to track smaller datasets with Git LFS
+# data/raw/
+# data/processed/
+# *.csv
+# *.tsv
+# *.jpg
+# *.png
+# *.npy
+# *.npz
+
+# Model checkpoints/weights (THESE SHOULD BE HANDLED BY GIT LFS - see below)
+# *.pth
+# *.pt
+# *.h5
+# *.hdf5
+# *.pb
+# *.onnx
+# *.ckpt
+# *.model
+# *.weights
+
+# Logs & Experiment Outputs (unless small and critical for reproducibility)
+logs/
+outputs/
+tensorboard_logs/
+wandb/ # If using Weights & Biases local files
+
+# Large temporary files
+*.tmp
+*.temp
+*.log
+# OS-specific
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+student_output/
+teacher_cache/
+resumes/
+stage1/
